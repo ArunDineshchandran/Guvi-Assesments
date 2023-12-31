@@ -1,0 +1,47 @@
+#! /bin/bash
+
+echo "---------simple while---"
+
+a=10
+b=14
+
+if [ $a -ne $b ] ; then
+echo "A is not equal to B "
+else
+ echo "B is not Equal to A"
+fi
+
+echo "------ greater than while---"
+
+a=15
+b=22
+
+if [[ $a -gt $b ]] ; then
+echo "A is not Greater than B"
+else
+echo "B is Greater than A"
+fi
+
+echo "------ Lesser than while---"
+
+a=60
+b=55
+
+if [[ $a -lt $b ]] ; then
+echo "A is Lesser than B"
+else
+echo "B is Not Lesser than A"
+fi
+
+echo "------ while Elif---"
+
+a=25
+b=25
+
+if [[ $a -ne $b ]] ; then
+echo "A is Not equal than B"
+elif [[ $b -ne $a ]] ; then
+echo "B is Not equal than A"
+else
+echo "A and B are Equal"
+fi
